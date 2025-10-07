@@ -13,7 +13,7 @@ export default function EmailComposer() {
   const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [provider, setProvider] = useState<'groq' | 'openai' | 'claude'>('groq');
+  const [provider, setProvider] = useState<'groq' | 'mistral' | 'qwen'>('groq');
 
   const generateSuggestions = async () => {
     if (!subject && !emailBody) {
@@ -80,8 +80,8 @@ export default function EmailComposer() {
             className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
           >
             <option value="groq">Groq (Llama 3.3) - FREE</option>
-            <option value="openai">OpenAI (GPT)</option>
-            <option value="claude">Claude (Anthropic)</option>
+            <option value="mistral">Mistral AI - FREE</option>
+            <option value="qwen">Qwen 3 (30B) - FREE</option>
           </select>
         </div>
 

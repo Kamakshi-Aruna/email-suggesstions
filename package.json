@@ -8,8 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@huggingface/inference": "^4.11.0",
+    "@mistralai/mistralai": "^1.10.0",
     "groq-sdk": "^0.33.0",
     "next": "15.5.4",
+    "openai": "^6.2.0",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },

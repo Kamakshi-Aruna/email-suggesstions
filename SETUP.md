@@ -36,23 +36,24 @@ Open http://localhost:3000
 
 ## 🤖 Supported LLM Providers
 
-### ✅ Groq (FREE - Recommended)
+### ✅ Groq (FREE - Recommended for Best Quality)
 - **Model**: Llama 3.3 70B
 - **Cost**: FREE
 - **Rate Limit**: 30 requests/min
 - **Setup**: https://console.groq.com/
+
+### ✅ Mistral AI (FREE - Alternative)
+- **Model**: Mistral Small
+- **Cost**: FREE tier available
+- **Rate Limit**: Rate limited
+- **Setup**: https://console.mistral.ai/
+- **Add to .env.local**: `MISTRAL_API_KEY=your_key`
 
 ### OpenAI (Paid)
 - **Cost**: ~$0.002 per request
 - **Setup**: https://platform.openai.com/api-keys
 - **Install**: `npm install openai`
 - **Add to .env.local**: `OPENAI_API_KEY=your_key`
-
-### Claude/Anthropic (Paid)
-- **Cost**: $5 free credits, then pay-as-you-go
-- **Setup**: https://console.anthropic.com/
-- **Install**: `npm install @anthropic-ai/sdk`
-- **Add to .env.local**: `ANTHROPIC_API_KEY=your_key`
 
 ## 🔧 Troubleshooting
 
@@ -71,15 +72,15 @@ Open http://localhost:3000
 - **Framework**: Next.js 15
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
-- **LLM SDK**: Groq SDK (groq-sdk)
+- **LLM SDKs**: Groq SDK, Mistral AI SDK
 
 ## 🎨 Features
 
 - ✅ Real-time AI suggestions
-- ✅ Multiple LLM providers
+- ✅ Multiple LLM providers (3 options)
 - ✅ Clean, modern UI
 - ✅ Dark mode support
-- ✅ Free tier available (Groq)
+- ✅ 2 FREE options (Groq + Mistral)
 - ✅ Easy provider switching
 
 ---
